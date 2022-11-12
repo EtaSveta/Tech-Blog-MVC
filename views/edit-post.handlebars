@@ -5,8 +5,8 @@
     </h2>
     <form class="edit-post-form">
         <div>
-            <input  name="post-title" type="text" value="{{post.title}}" />
-            <input class="post-text" name="post-title" value="{{post.post_text}}"></input>
+            <input name="post-title" type="text" value="{{post.title}}" />
+            <input name="post-text" id="post-text"  class="post-text" value="{{post.post_text}}"/>
         </div>
         <div>
             by you on {{format_date post.created_at}}
