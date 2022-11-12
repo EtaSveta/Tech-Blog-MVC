@@ -16,7 +16,7 @@
   ## Description
   This Tech Blog is a CMS style project utilising the MVC structure, routes, SQL and Handlebars templating. In this website, users can view/edit posts, login or sign up and leave comments .
   
-  ## Deployed Application
+  ## Application
   
   https://fathomless-hamlet-63445.herokuapp.com/
 
