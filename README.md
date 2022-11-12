@@ -1,14 +1,15 @@
 
   # Tech News Blog
 
-  
+  ![screenshot 1](https://user-images.githubusercontent.com/109307665/201497349-102703ff-8d6f-42e5-bf29-2446ca9dab23.png)
+
 
   ## Table of Content
   - [Project Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   
-  - [Tests](#tests)
+ 
   - [Questions](#questions)
 
   ## Description
