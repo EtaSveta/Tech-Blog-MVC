@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: rgb(60 255 208);
+  --tertiary-color: rgb(32, 147, 120);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,22 +13,32 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #333;
+  color: rgb(201, 194, 194);
+  background-color: var(--primary-color);
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: var(--secondary-color); 
   font-weight: bold;
   transition: color .1s;
 }
 
 a:hover {
-  color: #3486eb;
+  color: var(--tertiary-color);
+}
+
+li {
+  padding-right: 1em;
+}
+
+.card {
+  background-color: var(--primary-color);
+  border-color: var(--bs-card-color);
 }
 
 button {
-  background-color: #225ca3;
+  background-color: var(--secondary-color);
   border: 0;
   padding: 1%;
   color: white;
@@ -32,19 +48,33 @@ button {
   border-radius: 5px;
 }
 
-button:hover {
-  background-color: #3486eb;
+.submit-btn:hover {
+  background-color: var(--secondary-color);
 }
 
-.post-list {
-  margin: 0;
-  padding: 0;
+.submit-btn {
+  background-color: var(--tertiary-color);
+}
+
+button:hover {
+  background-color: var(--tertiary-color);
+}
+
+.comment-body {
+  max-width: 40%;
+  min-height: 100px;
 }
 
 textarea, input {
+  width: 100%;
   padding: .5%;
   border-radius: 5px;
   border: 1px solid #ccc;
+}
+
+.post-text {
+  margin-top: 0.5em;
+  height: 100px;
 }
 
 textarea:focus, input:focus {
@@ -52,10 +82,6 @@ textarea:focus, input:focus {
   border: 1px solid #3486eb;
 }
 
-textarea {
-  min-width: 40%;
-  min-height: 100px;
-}
 
 form > div {
   margin-bottom: 2%;
@@ -82,8 +108,22 @@ header {
   padding: 0 1%;
 }
 
-header h1 {
+header h1 a {
   font-size: 1em;
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 0.5em;
+}
+
+nav {
+  display: contents;
+}
+
+li {
+  list-style-type: none;
 }
 
 main {
@@ -97,16 +137,16 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: var(--secondary-color);
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
-  margin-left: 16px;
+  
 }
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: var(--tertiary-color);
 }
 
 .delete-post-btn {
@@ -122,24 +162,9 @@ main {
   line-height: 150%;
 }
 
-.post .title span {
-  font-style: italic;
-  font-size: 90%;
-  color: #7d7d7d;
-}
-
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
-}
-
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color .1s;
-}
-
-.upvote-btn:hover {
-  background-color: #1f9c13;
 }
 
 .comment-form {
@@ -149,20 +174,22 @@ main {
 .comment {
   padding: 1%;
   margin-bottom: 1%;
+  border-radius: 5px;
 }
 
 .comment:nth-child(odd) {
   background-color: #fff5eb;
+  color: var(--primary-color);
 }
 
 .comment .meta {
   font-size: 90%;
   margin-bottom: .5%;
-  opacity: .6;
+  opacity: .7;
 }
 
 .new-post-form input {
-  width: 300px;
+  width: 100%;
 }
 
 .edit-post-form {
